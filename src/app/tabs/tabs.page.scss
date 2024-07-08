@@ -1,0 +1,46 @@
+ion-tab-bar {
+    background-color: #ffffff; /* Couleur de fond */
+    border-top: 1px solid #e0e0e0; /* Bordure supérieure */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  }
+  
+  ion-tab-button {
+    --color-selected: #3880ff; /* Couleur du texte et de l'icône lorsqu'un onglet est sélectionné */
+    --color: #8c8c8c; /* Couleur du texte et de l'icône lorsqu'un onglet n'est pas sélectionné */
+    transition: color 0.3s ease; /* Transition pour le changement de couleur */
+  }
+  
+  ion-tab-button[aria-selected="true"] {
+    color: var(--color-selected); /* Couleur du texte et de l'icône pour l'onglet sélectionné */
+  }
+  
+  ion-tab-button:hover {
+    color: #3880ff; /* Couleur du texte et de l'icône lors du survol */
+  }
+  
+  ion-icon {
+    font-size: 20px; /* Taille des icônes */
+    margin-bottom: 4px; /* Marge inférieure pour espacer l'icône du label */
+  }
+  
+  ion-label {
+    font-size: 14px; /* Taille du texte des labels */
+    font-weight: bold; /* Texte en gras */
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    ion-tab-bar {
+      background-color: #1e1e1e; /* Couleur de fond en mode sombre */
+      border-top: 1px solid #333333; /* Bordure supérieure en mode sombre */
+    }
+  
+    ion-tab-button {
+      --color-selected: #66d1ff; /* Couleur du texte et de l'icône lorsqu'un onglet est sélectionné en mode sombre */
+      --color: #b3b3b3; /* Couleur du texte et de l'icône lorsqu'un onglet n'est pas sélectionné en mode sombre */
+    }
+  
+    ion-tab-button:hover {
+      color: #66d1ff; /* Couleur du texte et de l'icône lors du survol en mode sombre */
+    }
+  }
+  
